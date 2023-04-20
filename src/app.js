@@ -3,6 +3,10 @@ const morgan = require('morgan');
 const { default: helmet } = require('helmet');
 const compression = require('compression');
 const { checkOverload } = require('./helpers/check-connect');
+const loadENV = require('./helpers/load-env');
+
+// load environment variables
+loadENV();
 
 const app = express();
 
