@@ -1,4 +1,4 @@
-import app from './src/app.js';
+const app = require('./src/app');
 
 // Get the port from the environment variable or use 3745 as default
 const PORT = process.env.PORT || 3745;
